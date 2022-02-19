@@ -3,9 +3,9 @@ import 'package:flutter/services.dart';
 import 'package:flutter_demo/src/screens/home_page.dart';
 
 void main() {
-  SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle.light.copyWith(
-    statusBarColor: Colors.white,
-    statusBarIconBrightness: Brightness.dark
+  SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
+      statusBarColor: Colors.white,
+      statusBarIconBrightness: Brightness.dark
   ));
   runApp(MyApp());
 }
