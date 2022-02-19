@@ -63,7 +63,7 @@ class _HomePageCardState extends State<HomePageCard> {
               ),
               SizedBox(height: screenHeight(context, dividedBy: 120)),
               Text(
-                "from " + widget.startTime + " to " + widget.endTime ,
+                "From " + widget.startTime + " To " + widget.endTime ,
                 style: TextStyle(
                     fontSize: 13,
                     color: Colors.grey,
@@ -87,12 +87,15 @@ class _HomePageCardState extends State<HomePageCard> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Container(
-                        width: screenWidth(context, dividedBy: 15),
-                        height: screenWidth(context, dividedBy: 15),
+                        width: screenWidth(context, dividedBy: 25),
+                        height: screenWidth(context, dividedBy: 25),
                         decoration: BoxDecoration(
                             shape: BoxShape.circle, color: Constants.colors[8]),
                         child: Center(
-                            child: Image.asset("assets/icons/crown.png"))),
+                            child: Image.asset("assets/icons/crown.png",
+                              width: screenWidth(context, dividedBy: 30),
+                              height: screenWidth(context, dividedBy: 30),
+                            fit:BoxFit.cover))),
                     SizedBox(
                       width: screenWidth(context, dividedBy: 40),
                     ),
